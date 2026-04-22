@@ -25,7 +25,7 @@ export default function BottomNav() {
               key={href}
               href={href}
               className="flex-1 flex flex-col items-center justify-center py-2 gap-0.5 text-[10px] font-medium"
-              )}
+>
             >
              <div style={{ fontSize: "20px" }}>{icon}</div>
               <span>{label}</span>
