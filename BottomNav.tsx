@@ -1,27 +1,16 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  LayoutDashboard,
-  Calculator,
-  BadgeDollarSign,
-  BookOpen,
-  Syringe,
-  Leaf,
-  BarChart3,
-  Scale,
-} from "lucide-react";
 import { cn } from "@/lib/utils";
-
 const NAV_ITEMS = [
-  { href: "/", label: "Beranda", icon: LayoutDashboard },
-  { href: "/kalkulator", label: "Pakan", icon: Calculator },
-  { href: "/biaya", label: "Biaya", icon: BadgeDollarSign },
-  { href: "/nutrisi", label: "Input", icon: Scale },
-  { href: "/fcr", label: "FCR", icon: BarChart3 },
-  { href: "/vaksin", label: "Vaksin", icon: Syringe },
-  { href: "/panduan", label: "Panduan", icon: BookOpen },
-  { href: "/herbal", label: "Herbal", icon: Leaf },
+  { href: "/", label: "Beranda", icon: "icon" },
+  { href: "/kalkulator", label: "Pakan", icon: "icon"},
+  { href: "/biaya", label: "Biaya", icon: "icon" },
+  { href: "/nutrisi", label: "Input", icon: "icon" },
+  { href: "/fcr", label: "FCR", icon: "icon" },
+  { href: "/vaksin", label: "Vaksin", icon: "icon" },
+  { href: "/panduan", label: "Panduan", icon: "icon" },
+  { href: "/herbal", label: "Herbal", icon: "icon" },
 ];
 
 export default function BottomNav() {
