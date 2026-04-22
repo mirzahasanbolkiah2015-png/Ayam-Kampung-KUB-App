@@ -19,7 +19,7 @@ export default function BottomNav() {
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border shadow-lg">
       <div className="max-w-lg mx-auto flex">
-        {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
+        {NAV_ITEMS.map(({ href, label }) => {
           const isActive = pathname === href;
           return (
             <Link
@@ -32,11 +32,7 @@ export default function BottomNav() {
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
               )}
             >
-              <Icon
-                size={20}
-                strokeWidth={isActive ? 2.5 : 1.8}
-                className={isActive ? "text-[oklch(0.48_0.15_148)]" : ""}
-              />
+             <div style={{ fontSize: "20px" }}>🐔</div>
               <span>{label}</span>
             </Link>
           );
