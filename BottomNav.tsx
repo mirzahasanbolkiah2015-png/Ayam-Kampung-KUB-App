@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
+
 const NAV_ITEMS = [
   { href: "/", label: "Beranda", icon: "icon" },
   { href: "/kalkulator", label: "Pakan", icon: "icon"},
@@ -25,11 +25,7 @@ export default function BottomNav() {
             <Link
               key={href}
               href={href}
-              className={cn(
-                "flex-1 flex flex-col items-center justify-center py-2 gap-0.5 text-[10px] font-medium transition-colors",
-                isActive
-                  ? "text-[oklch(0.48_0.15_148)] bg-[oklch(0.92_0.06_148)]"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              className="flex-1 flex flex-col items-center justify-center py-2 gap-0.5 text-[10px] font-medium"
               )}
             >
              <div style={{ fontSize: "20px" }}>🐔</div>
